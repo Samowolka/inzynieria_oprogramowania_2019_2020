@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width:100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width:100%;
+    max-width: 340px;
+    max-height: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 5px #ccc;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+header {
+    width:100%;
+    padding: 20px 0;
+    background: #0C609C;
+    color: #fff;
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 1.6em;
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+section {
+    flex-grow: 1;
+    padding: 10px 20px;
+    overflow: auto;
+}
+    .inputGroup {
+        width:100%;
+        margin-top: 25px;
+    }
+    .inputGroup:first-of-type {
+        margin-top: 10px;
+    }
+    .inputGroup > h3 {
+        font-size: 1.4em;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 8px;
+    }
+    .inputGroup > input {
+        font-size: 1em;
+        font-family: 'Open Sans', sans-serif;
+        width: calc(100% - 2px - 10px);
+        border:solid 1px #ccc;
+        padding: 5px
+    }
+    .inputGroup > input:focus {
+        border-color: #0C609C;
+    }
+
+    #buttons {
+        width:100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #buttons > a,
+    #buttons > button {
+        font-size: 0.9em;
+        font-family: 'Open Sans', sans-serif;
+        padding: 8px 24px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #loginBtn {
+        border: none;
+        background: #0C609C;
+        color: #fff;
+        margin-bottom: 20px;
+        transition: transform 0.3s;
+    }
+    #buttons > a:hover,
+    #buttons > button:hover {
+        transform: scale(1.05);
+    }
+    #buttons > a:active,
+    #buttons > button:active {
+        transform: scale(1);
+    }
+    #registerBtn {
+        border: solid 2px #0C609C;
+        background: transparent;
+        color: #0C609C;
+        display: inline-block;
+        text-decoration: none;
+        transition: color 0.3s, transform 0.3s, background 0.3s;
+    }
+    #registerBtn:hover {
+        color: #fff;
+        background: #0C609C;
+    }
+
+footer {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0.8em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+}
